@@ -1,0 +1,19 @@
+
+{% load static  %}
+<div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+    <div class=".img-rounded">
+
+        <img src="{% static "./img/logo.png" %}" >
+    </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{% url "home" %}">Little Lemon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="{% url "menulist" %}">Menu</a></li>
+        <li><a href="{% url "about" %}">About</a></li>
+      </ul>
+    </div>
+  </nav>
