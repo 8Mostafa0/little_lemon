@@ -1,0 +1,24 @@
+{% extends "menu/base.html" %}
+{% block content %}
+<style>
+    
+    #mm {
+        
+        display: -webkit-box;
+        width: auto;
+        height:300px;
+        margin-left: auto;
+        
+    }
+    
+</style>
+<div class="well">
+    <div class="d-flex bg-secondary" >
+        <h3>Name : {{ object.Name }}</h3>
+        <p>Price : {{ object.Price }}</p>   
+        <p>Price : {{ object.Discription }}</p>   
+        <img class="img-rounded" id="mm" style="{ float: right;  }" src="{{ object.Img.url }}">
+            
+        </div>
+    </div>
+{% endblock  %}
